@@ -1,0 +1,53 @@
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+}
+
+.toggle-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.toggle-button {
+  background: none;
+  color: #007BFF;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}

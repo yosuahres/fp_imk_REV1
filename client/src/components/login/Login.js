@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Login.css"; 
 
 const Login = () => {
@@ -7,6 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [isLogin, setIsLogin] = useState(true); // Toggle
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -17,6 +19,9 @@ const Login = () => {
       });
       setMessage("Login successful!");
       console.log("Token:", response.data.token); // Handle token if needed
+
+      // Navigate to /form after successful login
+      navigate("/form");
     } catch (error) {
       setMessage(error.response?.data?.error || "An error occurred.");
     }
